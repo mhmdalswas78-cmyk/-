@@ -1,5 +1,16 @@
-plugins { id 'com.android.application' }
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.5.2'
+    }
+}
 
-android { namespace 'com.syriapokervip'; compileSdk 35
-    defaultConfig { applicationId 'com.syriapokervip'; minSdk 23; targetSdk 35; versionCode 1; versionName '1.0' }
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
 }
